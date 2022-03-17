@@ -1,0 +1,184 @@
+body{
+  background-color: white;
+  overflow-y: scroll;
+  margin: 0;
+}
+
+a{
+  color: white;
+}
+
+.transition-fade{
+  opacity: 1;
+  transition: 500ms;
+}
+
+html.is-animating .transition-fade{
+  opacity: 1;
+
+  transform: translateY(100%);
+}
+
+html.is-leaving .transition-fade{
+  opacity: 0;
+  transform: translateY(0);
+}
+
+html.is-rendering .transition-fade{
+  position: fixed;
+}
+
+.swup-progress-bar {
+  height: 5px;
+  background-color: white;
+}
+
+img{
+  display: inline-block;
+    vertical-align: middle;
+    max-width: 100%;
+    height: auto;
+}
+
+.text {
+  margin: 0 auto;
+  max-width: 1228px;
+  height: 100%;
+}
+
+.text .grid{
+  display: grid;
+  grid-gap: 80px;
+  grid-template-columns: repeat(3, 2fr);
+  grid-template-areas: "title skills software"
+                       "synopsis synopsis synopsis"
+                        ;
+}
+
+@media screen and (max-width: 700px) {
+.text .grid {
+  grid-template-columns: repeat(1, 4fr);
+  grid-template-areas: "title"
+                       "skills"
+                       "software"
+                       "synopsis"
+                        ;
+}
+}
+
+
+.title{
+  grid-area: title;
+  width: 100%;
+  text-align: left;
+}
+
+.title h2{
+  padding-bottom: 15px;
+}
+
+.skills{
+  grid-area: skills;
+  width: 100%;
+  text-align: left;
+}
+
+.skills h2{
+  padding-bottom: 15px;
+}
+
+.software{
+  grid-area: software;
+  width: 100%;
+  text-align: left;
+}
+
+.software h2{
+  padding-bottom: 15px;
+}
+
+.synopsis{
+  grid-area: synopsis;
+  width: 100%;
+  text-align: left;
+}
+
+.synopsis h2{
+  padding-bottom: 15px;
+}
+
+.nav-bar{
+  background: rgba(255, 255, 255, 1);
+  /*mix-blend-mode: exclusion;*/
+  z-index: 1;
+  position: fixed;
+  width: 100%;
+  margin: auto;
+  left: 0;
+  right: 0;
+  font-family: 'Lato', sans-serif;
+font-weight: 300;
+font-size: .9em;
+  letter-spacing: 6px;
+}
+
+.nav-grid{
+  display: grid;
+  color: black;
+  margin: auto;
+  padding: 1rem 0rem;
+  max-width: 1228px;
+  grid-gap: 80px;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-areas: "homepage homepage homepage homepage about illustration design motion"
+                        ;
+}
+
+@media screen and (max-width: 700px) {
+.nav-grid {
+  grid-gap: 20px;
+  grid-template-columns: repeat(1, 5fr);
+  grid-template-areas: "homepage"
+                       "about"
+                       "illustration"
+                       "design"
+                       "motion"
+                        ;
+}
+}
+
+.about{
+  grid-area: about;
+  width: 100%;
+}
+
+.illustration{
+  grid-area: illustration;
+  width: 100%;
+}
+
+.design{
+  grid-area: design;
+  width: 100%;
+}
+
+.motion{
+  grid-area: motion;
+  width: 100%;
+}
+
+.nav-item{
+  text-align: right;
+}
+
+.homepage{
+  grid-area: homepage;
+  width: 100%;
+  text-align: left;
+}
+
+@media screen and (max-width: 700px) {
+  .nav-item{
+    text-align: center;
+  }
+}
