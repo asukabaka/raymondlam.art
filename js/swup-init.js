@@ -46,7 +46,6 @@ window.addEventListener("scroll", () => {
 
 
 const options = {
-    cache:false,
     plugins: [new SwupProgressPlugin(
     {
       className: 'swup-progress-bar',
