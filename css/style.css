@@ -140,7 +140,7 @@ img{
 
 .js-scroll {
   opacity: 0;
-  transition: opacity 500ms;
+  transition: opacity 250ms;
 }
 
 .js-scroll.scrolled {
@@ -148,7 +148,7 @@ img{
 }
 
 .scrolled.fade-in-bottom {
-  animation: fade-in-bottom 1s ease-in-out both;
+  animation: fade-in-bottom .5s ease-in-out both;
 }
 
 @keyframes fade-in-bottom {
@@ -261,4 +261,25 @@ img{
 
 .synopsis h2{
   padding-bottom: 15px;
+}
+
+.SFD_logo_tall {
+  display: block;
+  background-repeat: no-repeat;
+  width: 491px;
+  height: 300px;
+  background: url(../images/asukabaka_tall.png);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5rem ;
+  opacity: 1;
+  transition: ease .5s;
+}
+
+@media screen and (max-width: 600px) {
+  .SFD_logo_tall {
+  width: 245px;
+  height: 150px;
+  background-size: 245px 150px; 
+}
 }
