@@ -97,7 +97,8 @@ img{
 }
 
 .bg-light{
-  background-color: white !important;
+  background-color: rgba(0, 0, 0, 0); !important;
+  --bs-bg-opacity: 0;
 }
 
 #navbarNav{
@@ -109,7 +110,8 @@ img{
 }
 
 .navbar.navbar-expand-lg.navbar-light{
-  background-color: white;
+  mix-blend-mode: exclusion;
+  background-color: rgba(0, 0, 0, 0);
   margin: auto;
   z-index: 1;
   left: 0;
@@ -122,11 +124,11 @@ img{
 }
 
 .navbar-light .navbar-nav .nav-link{
-  color: black;
+  color: white;
 }
 
 .navbar-light .navbar-brand{
-  color: black;
+  color: white;
 }
 
 @media screen and (max-width: 700px) {
@@ -194,12 +196,14 @@ img{
   text-align: center;
   padding-top: 40px;
   padding-bottom: 110px;
+  margin: auto;
 }
 
 .text {
   margin: 0 auto;
   max-width: 1228px;
   height: 100%;
+  align-content: center;
 }
 
 .text .grid{
@@ -263,6 +267,46 @@ img{
   padding-bottom: 15px;
 }
 
+.grid-artwork-2{
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  margin: auto;
+  
+}
+
+.grid-artwork-3{
+  display: grid;
+  grid-template-columns: repeat(3, 2fr);
+  
+}
+
+.position-right{
+  position: relative;
+  right: 15%;
+}
+
+.text-overlay-right {
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  max-width: 400px;
+}
+
+@media screen and (max-width: 700px) {
+  .text-overlay-right {
+    display: none;
+}
+}
+
+.text-mobile-only{
+  display: none;
+}
+
+@media screen and (max-width: 700px) {
+  .text-mobile-only{
+    display: initial;
+  }
+}
 .SFD_logo_tall {
   display: block;
   background-repeat: no-repeat;
@@ -286,7 +330,6 @@ img{
 
 .social-links {
   background: white;
-  padding: 2rem 0 1rem;
 }
 
 .social-links a {
@@ -333,3 +376,7 @@ img{
 .social-links a:hover{
   opacity: .6;
 }
+
+.slide{ 
+    top: 0px;
+    left: 0px;}

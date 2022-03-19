@@ -2,8 +2,9 @@ document.addEventListener("DOMContentLoaded", () => {
     // run whatever we need
 });
 
+//
 function init() {
-    const scrollElements = document.querySelectorAll(".js-scroll");
+const scrollElements = document.querySelectorAll(".js-scroll");
 
 const elementInView = (el, dividend = 1) => {
   const elementTop = el.getBoundingClientRect().top;
