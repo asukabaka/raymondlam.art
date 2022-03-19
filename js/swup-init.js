@@ -2,9 +2,16 @@ document.addEventListener("DOMContentLoaded", () => {
     // run whatever we need
 });
 
-//
 function init() {
-const scrollElements = document.querySelectorAll(".js-scroll");
+$(document).on('ready', function() {
+  $(".variable").slick({
+  dots: true,
+  infinite: true,
+  variableWidth: true
+  });
+  });
+  
+    const scrollElements = document.querySelectorAll(".js-scroll");
 
 const elementInView = (el, dividend = 1) => {
   const elementTop = el.getBoundingClientRect().top;
@@ -35,7 +42,9 @@ const handleScrollAnimation = () => {
   scrollElements.forEach((el) => {
     if (elementInView(el, 1.25)) {
       displayScrollElement(el);
-    } 
+    } else if (elementOutofView(el)) {
+      hideScrollElement(el)
+    }
   })
 }
 
@@ -47,6 +56,7 @@ window.addEventListener("scroll", () => {
 
 
 const options = {
+  
     plugins: [new SwupProgressPlugin(
     {
       className: 'swup-progress-bar',
