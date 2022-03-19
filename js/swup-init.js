@@ -3,14 +3,8 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 function init() {
-$(document).on('ready', function() {
-  $(".variable").slick({
-  dots: true,
-  infinite: true,
-  variableWidth: true
-  });
-  });
-  
+
+
     const scrollElements = document.querySelectorAll(".js-scroll");
 
 const elementInView = (el, dividend = 1) => {
