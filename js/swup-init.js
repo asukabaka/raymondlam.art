@@ -3,8 +3,6 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 function init() {
-
-
     const scrollElements = document.querySelectorAll(".js-scroll");
 
 const elementInView = (el, dividend = 1) => {
