@@ -377,11 +377,3 @@ img{
 .social-links a:hover{
   opacity: .6;
 }
-
-.slide{ 
-    top: 0px;
-    left: 0px;}
-
-.modal {
-  overflow: inherit; !important
-}
