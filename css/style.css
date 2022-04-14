@@ -61,7 +61,7 @@ h1{
   -webkit-user-select: none;  /* Chrome all / Safari all */
   -moz-user-select: none;     /* Firefox all */
   -ms-user-select: none;      /* IE 10+ */
-  user-select: none;          /* Likely future */      
+  user-select: none;          /* Likely future */
 }
 
 h2{
@@ -74,7 +74,7 @@ h2{
   -webkit-user-select: none;  /* Chrome all / Safari all */
   -moz-user-select: none;     /* Firefox all */
   -ms-user-select: none;      /* IE 10+ */
-  user-select: none;          /* Likely future */     
+  user-select: none;          /* Likely future */
 }
 
 h3{
@@ -87,7 +87,7 @@ h3{
   -webkit-user-select: none;  /* Chrome all / Safari all */
   -moz-user-select: none;     /* Firefox all */
   -ms-user-select: none;      /* IE 10+ */
-  user-select: none;          /* Likely future */     
+  user-select: none;          /* Likely future */
 }
 
 img{
@@ -141,7 +141,7 @@ img{
   }
 }
 
-.js-scroll {
+/* .js-scroll {
   opacity: 0;
   transition: opacity 250ms;
 }
@@ -165,7 +165,7 @@ img{
     transform: translateY(0);
     opacity: 1;
   }
-}
+} */
 
 .front_artwork {
   text-align:center;
@@ -197,14 +197,14 @@ img{
   font-size: 2em;
   color: white;
   text-align: center;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 120px;
+  padding-bottom: 120px;
   margin: auto;
 }
 
 .text {
   margin: 0 auto;
-  max-width: 1228px;
+  max-width: 1028px;
   height: 100%;
   align-content: center;
 }
@@ -274,13 +274,19 @@ img{
   display: grid;
   grid-template-columns: repeat(2, 2fr);
   margin: auto;
-  
+
 }
 
 .grid-artwork-3{
   display: grid;
   grid-template-columns: repeat(3, 2fr);
-  
+
+}
+
+.grid-artwork-4{
+  display: grid;
+  grid-template-columns: repeat(4, 2fr);
+
 }
 
 .position-right{
@@ -327,7 +333,7 @@ img{
   .SFD_logo_tall {
   width: 245px;
   height: 150px;
-  background-size: 245px 150px; 
+  background-size: 245px 150px;
 }
 }
 
@@ -371,11 +377,15 @@ img{
   }
 }
 
-.social-links a{  
+.social-links a{
   opacity: 1;
   transition: .5s ease;
 }
 
 .social-links a:hover{
   opacity: .6;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+  background-color: black;
 }
