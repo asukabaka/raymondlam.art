@@ -97,6 +97,10 @@ img{
     height: auto;
 }
 
+video{
+  max-width: 100%;
+}
+
 .bg-light{
   background-color: rgba(0, 0, 0, 0); !important;
   --bs-bg-opacity: 0;
