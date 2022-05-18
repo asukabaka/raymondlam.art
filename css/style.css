@@ -83,7 +83,7 @@ h3{
   font-weight: 300;
   margin: 0 auto;
   color: black;
-  font-size: .5rem;
+  font-size: 2rem;
   -webkit-user-select: none;  /* Chrome all / Safari all */
   -moz-user-select: none;     /* Firefox all */
   -ms-user-select: none;      /* IE 10+ */
@@ -222,6 +222,10 @@ video{
                         ;
 }
 
+.header{
+  padding-bottom: 60px;
+}
+
 @media screen and (max-width: 700px) {
 .text .grid {
   grid-template-columns: repeat(1, 4fr);
@@ -272,6 +276,56 @@ video{
 
 .synopsis h2{
   padding-bottom: 15px;
+}
+
+
+.text-portfolio .grid-portfolio {
+  display: grid;
+  grid-row-gap: 10px;
+  grid-column-gap: 80px;
+  grid-template-columns: repeat(4, 3fr);
+  grid-template-areas:  "company company company company"
+                        "location duration duration duration"
+                        "role synopsis synopsis synopsis"
+                        ;
+}
+
+.text-portfolio {
+  margin: 0 auto;
+  max-width: 1028px;
+  height: 100%;
+  align-content: center;
+  padding-bottom: 100px;
+}
+
+.company{
+  grid-area: company;
+  width: 100%;
+  text-align: left;
+}
+
+.location{
+  grid-area: location;
+  width: 100%;
+  text-align: left;
+}
+
+.duration{
+  grid-area: duration;
+  width: 100%;
+  text-align: left;
+}
+
+.role{
+  grid-area: role;
+  width: 100%;
+  text-align: left;
+}
+
+.synopsis{
+  grid-area: synopsis;
+  width: 100%;
+  text-align: left;
 }
 
 .grid-artwork-2{
